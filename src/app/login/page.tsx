@@ -20,7 +20,8 @@ export default function Login() {
   }
 
   return(
-    <div>
+    <div className={styles.container}>
+      <div className={styles.login}>
         <h1>Login</h1>
         <input className={styles.input} type="text" value={user} placeholder="Nome de usuário" onChange={(e) => setUser(e.target.value)}/>
         <input className={styles.input} type="text" value={senha} placeholder="Senha" onChange={(e) => setSenha(e.target.value)}/>
@@ -33,6 +34,7 @@ export default function Login() {
         </div>
       )}
     </div>
+  </div>
   );
 
 
